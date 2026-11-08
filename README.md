@@ -1,6 +1,8 @@
 # Mechanical Engineering Portfolio
 
-A collection of academic and practical work in mechanical engineering, including CAD design, prototyping, engineering analysis, equipment fault diagnosis and technical problem-solving.
+I'm a Mechanical Engineering graduate from the University of Benin with an interest in CAD design, product development, engineering analysis and practical problem-solving.
+
+This portfolio brings together some of the projects and technical work I've been involved in, starting with my final-year drone project. I'll continue adding new work as I develop my skills in engineering design and simulation.
 
 **Otubu Osayande Able**  
 Mechanical Engineering graduate · University of Benin  
@@ -9,21 +11,21 @@ Mechanical Engineering graduate · University of Benin
 ## Featured project
 
 ### [Object Detection Drone](object-detection-drone/)
-A final-year team project involving the design and development of a 3D-printed quadcopter prototype. The work covered CAD modelling, structural analysis, PLA 3D printing, electronics integration, basic camera-based face detection, flight testing and design iteration.
+For my final-year project, I worked with a team of four to design and develop a 3D-printed quadcopter. The project involved CAD modelling, structural analysis, 3D printing, electronics integration, camera-based face detection and flight testing.
 
-**Tools:** SolidWorks, AutoCAD, Arduino, OpenMV IDE, Python and 3D printing.
+**Tools used:** SolidWorks, AutoCAD, Arduino, OpenMV IDE and Python.
 
-## Engineering background
+## Skills and experience
 
-- **CAD and design:** SolidWorks and AutoCAD; 3D modelling and engineering design.
-- **Engineering analysis:** Structural stress and displacement studies as part of academic design work.
-- **Prototyping:** PLA 3D printing, component assembly and prototype testing.
-- **Practical engineering:** Solar street-light systems, inverter fault diagnosis, circuit-board soldering and technical troubleshooting.
+- **CAD and design:** SolidWorks, AutoCAD and 3D modelling.
+- **Engineering analysis:** Structural stress and displacement analysis.
+- **Prototyping:** 3D printing, component assembly and prototype testing.
+- **Practical engineering:** Solar street-light systems, inverter fault diagnosis, circuit-board soldering and troubleshooting.
 
-## Professional development
+## Current learning
 
-Currently working through MATLAB Onramp and Simulink Onramp. Related projects and certificates will be added after completion.
+I'm currently completing MATLAB Onramp and Simulink Onramp. I'll add the certificates and related projects to this portfolio once I've finished them.
 
-## About this portfolio
+## More projects
 
-This portfolio is being developed to document project work, explain engineering decisions and provide evidence of practical skills. Team-project contributions are identified as such; individual responsibilities are only stated where they can be verified.
+I'll use this portfolio to share project work, design files, analysis and lessons from practical engineering tasks as I build up my experience.
