@@ -1,17 +1,15 @@
-# Design files
+# Drone design files
 
-This folder is reserved for the original CAD and manufacturing files for the drone frame.
+This folder is for the CAD and manufacturing files used in the drone project.
 
-## Current contents
+The repository currently includes selected stress and displacement analysis images in the [images folder](../images/). I haven't added the original editable CAD models or manufacturing drawings yet.
 
-The repository currently includes selected stress and displacement analysis images in the project's [images folder](../images/). The original editable CAD models and manufacturing drawings have not yet been added.
+When I add them, this folder can include:
 
-## Files to add when available
+- SolidWorks part files (.sldprt)
+- SolidWorks assembly files (.sldasm)
+- STEP or IGES exports
+- STL files for 3D printing
+- Engineering drawings in PDF or DWG format
 
-- SolidWorks part files: .sldprt
-- SolidWorks assembly files: .sldasm
-- Neutral CAD exports: .STEP or .IGES
-- 3D-printing files: .STL
-- Engineering drawings: .PDF or .DWG
-
-Only add files that are genuinely from the project. Label screenshots and recreated models clearly so they are not mistaken for original design evidence.
+I'll only include files that belong to the project and label any recreated models or screenshots clearly.
