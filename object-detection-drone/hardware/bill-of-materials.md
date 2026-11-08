@@ -1,6 +1,6 @@
-# Bill of Materials
+# Drone bill of materials
 
-The table below records the component costs stated in the final-year project report. It is a transcription of the report, not a verified purchase ledger. Some quantities, unit prices and totals are inconsistent or incomplete.
+I have listed the component costs below as they appear in our final-year project report. Some entries in the original cost breakdown are incomplete or do not match the quantities and unit prices, so the figures should be treated as the report's record rather than a verified list of purchases.
 
 | # | Component | Specification | Qty | Unit cost (₦) | Reported total (₦) |
 |---|---|---|---:|---:|---:|
@@ -20,7 +20,7 @@ The table below records the component costs stated in the final-year project rep
 | 14 | Battery charger | — | 2 | 4,800 | 9,300 |
 | 15 | Spare Arduino | — | 1 | 12,000 | 12,000 |
 
-## Reported summary
+## Cost summary in the report
 
 | Category | Amount (₦) |
 |---|---:|
@@ -28,11 +28,11 @@ The table below records the component costs stated in the final-year project rep
 | Miscellaneous | 21,000 |
 | **Reported total** | **430,900** |
 
-## Important limitations
+## Notes on the figures
 
-- The OpenMV camera has no price listed.
-- Some quantities and line totals do not reconcile. For example, the charger quantity and unit price do not produce the stated line total.
-- The reported materials subtotal has not been independently recalculated because the source entries are incomplete or inconsistent.
-- The figures should not be used as a current cost estimate; they reflect the report's historical figures.
+- The OpenMV camera price was not included.
+- Some quantities and totals do not agree. For example, the charger quantity and unit price do not add up to the reported line total.
+- I have kept the reported subtotal and total as written rather than changing figures without supporting purchase records.
+- These are the figures recorded for the project in 2023, not current component prices.
 
-The original report is the source for these figures. Receipts or a corrected purchase list would be needed to produce a reliable, reconciled bill of materials.
+The original project report is the source for this table. A corrected cost breakdown would need the purchase records or a confirmed list of what was bought.
