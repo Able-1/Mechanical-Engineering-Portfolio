@@ -22,6 +22,12 @@ For my final-year project, I worked with a team of four to design and develop a 
 - **Prototyping:** 3D printing, component assembly and prototype testing.
 - **Practical engineering:** Solar street-light systems, inverter fault diagnosis, circuit-board soldering and troubleshooting.
 
+## Solar Engineering Experience
+
+I also completed a Solar Technician internship at JRB Solar Investment Limited, where I worked on solar street-light fault diagnosis and repair, inverter system installation, and remote monitoring of installed solar systems.
+
+[View my solar engineering experience](solar-engineering-experience/README.md).
+
 ## Current learning
 
 I'm currently completing MATLAB Onramp and Simulink Onramp. I'll add the certificates and related projects to this portfolio once I've finished them.
