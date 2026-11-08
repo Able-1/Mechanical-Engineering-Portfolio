@@ -1,16 +1,15 @@
-[object-detection-drone-project-report-redacted.pdf](https://github.com/user-attachments/files/34553824/object-detection-drone-project-report-redacted.pdf)
 # Final-year project report
 
 **Project:** The Design and Development of an Object Detection Drone  
 **Degree:** B.Eng Mechanical Engineering  
 **Institution:** University of Benin, Nigeria  
-**Submission:** September 2023  
-**Project type:** Four-person group project
+**Date:** September 2023  
+**Project:** Group project completed by four students
 
-A privacy-reviewed copy of the academic report has been prepared for portfolio use. The student numbers and the other group members’ names have been removed from the public-sharing copy. The author’s name and the academic project details remain.
+[View the full project report (PDF)](https://github.com/user-attachments/files/34553824/object-detection-drone-project-report-redacted.pdf)
 
-The report documents the project background, design process, prototype development, hardware integration, camera-based face-detection function, structural analysis and flight-test observations. The repository’s project page summarises the work and highlights important evidence and limitations.
+This is the report we submitted for our final-year project. It covers the design and development of the quadcopter, including the CAD work, structural analysis, 3D-printed prototype, hardware integration, camera-based face detection and flight tests.
 
-**Important:** The report describes a team project. This portfolio does not claim that every design, software or testing task was completed individually by the repository owner. The face-detection implementation is described as frontal-face detection, not general-purpose object detection.
+I have shared a copy with the other students' names and student numbers removed. The project itself was completed as a team, and the report documents the work carried out for the group project.
 
-The PDF copy is prepared locally and is not yet attached to this GitHub repository. It should be added here as `object-detection-drone-project-report-redacted.pdf` after upload through GitHub’s web interface.
+The project page contains a shorter overview, selected images and the main points from the design and testing work.
