@@ -1,123 +1,110 @@
 # Object Detection Drone: 3D-Printed Quadcopter
 
-**Final-year B.Eng project · Mechanical Engineering · University of Benin, Nigeria · September 2023**
+**Final-year B.Eng group project · Mechanical Engineering · University of Benin · 2023**
 
-A 3D-printed quadcopter with an Arduino flight controller, an MPU6050 stability sensor and an OpenMV H7 Plus camera that detects faces and triggers an LED/alarm. The project covers CAD, structural analysis, 3D printing, electronics integration, flight testing and redesign after crashes.
+This project involved developing a 3D-printed quadcopter prototype with an Arduino-based control system, an MPU6050 motion sensor and an OpenMV H7 Plus camera. The camera implementation performed frontal-face detection and activated an LED/alarm output when a face was detected.
+
+The project brought together mechanical design, structural analysis, 3D printing, electronics integration, computer vision and iterative testing.
 
 ![Blue Beetle CAD render](images/blue-beetle-cad-render.png)
 
-> **Group project.** Completed by a team of four students. See [My role](#my-role) for what I personally did.
+> **Team project:** completed by a group of four students. This page describes the overall project. It does not assign unverified individual contributions.
 
-## At a glance
-| | |
+## Project overview
+
+| Area | Details |
 |---|---|
-| Type | Final-year group project (B.Eng) |
-| Configuration | Quadcopter |
-| Frame | 3D printed in PLA, designed in CAD |
-| Flight controller | Arduino Uno |
-| Stability sensor | MPU6050 (6-axis IMU) |
-| Vision | OpenMV Cam H7 Plus, Haar-cascade face detection (Python) |
-| Propulsion | 4 × 2200 Kv brushless motors, 4 × 4 A ESCs, 3S LiPo |
-| Control | FlySky i6X transmitter and receiver |
-| Cost | ₦430,900 ([breakdown](hardware/bill-of-materials.md)) |
-| Outcome | Stable flight achieved after three flight tests and two design iterations |
+| Platform | Quadcopter prototype |
+| Frame | 3D-printed PLA |
+| Control hardware | Arduino Uno |
+| Motion sensor | MPU6050 |
+| Camera | OpenMV Cam H7 Plus |
+| Vision task | Frontal-face detection using a Haar cascade |
+| Propulsion | Four brushless motors with ESCs |
+| Radio control | FlySky i6X transmitter and receiver |
+| Project cost | ₦430,900 as stated in the report; see [bill of materials](hardware/bill-of-materials.md) |
 
-## My role
-<!-- Edit to match exactly what YOU did. Keep it honest: recruiters will ask. -->
-- Designed and modelled drone parts in SolidWorks/AutoCAD
-- Ran stress and displacement analysis on the frame
-- 3D printed the components and assembled the drone
-- Took part in flight testing and the redesign after crashes
+## Project objectives
 
-Some of the programming for the vision system was supported by an outsourced programmer, and the team learned the configuration process as part of the project.
-
-## Objectives
-1. Design and analyse a lightweight 3D-printed airframe.
-2. Manufacture the frame by 3D printing.
-3. Integrate the propulsion system (motors, propellers, battery).
-4. Integrate the control circuits and flight controller.
-5. Integrate a camera for basic real-time object detection.
-6. Test flight stability, control response and detection.
-
-## Development workflow
-1. Literature review of existing UAV designs
-2. Conceptual design of the quadcopter
-3. CAD modelling of the frame and components
-4. Structural stress, strain and displacement analysis
-5. 3D printing the frame in PLA
-6. Procurement of electronics, assembly and wiring
-7. Flight controller and camera configuration
-8. Flight testing, failure analysis and redesign
+1. Design a lightweight quadcopter frame.
+2. Model and assess the frame before manufacture.
+3. Manufacture the frame using 3D printing.
+4. Integrate the propulsion, control and power components.
+5. Add a camera-based face-detection function.
+6. Conduct flight tests and improve the design based on observations.
 
 ## Design and analysis
-The central hub and arms were modelled in CAD. Static stress, strain and displacement studies were run on the arm and the hub before printing, to check the structure and find where material could be saved or reinforced.
+
+The team modelled the frame components in CAD and carried out structural stress, strain and displacement studies. The analysis was used to assess the proposed frame before 3D printing.
 
 | Displacement study | Stress study |
 |---|---|
-| ![Displacement](images/displacement-analysis-2.png) | ![Stress](images/stress-analysis.png) |
+| ![Displacement analysis](images/displacement-analysis-2.png) | ![Stress analysis](images/stress-analysis.png) |
 
-**Why PLA:** light, easy to print, cheap and quick to re-print after a crash. The trade-offs are brittleness, low heat resistance and poor impact tolerance, which showed up in flight testing. Propellers were bought rather than printed, because weight must be equal on all four arms.
+The prototype frame was printed in PLA. PLA made it practical to produce and revise parts, although its impact resistance and heat tolerance are limitations to consider in a flying prototype.
 
-## Electronics and control
-| Component | Function |
+## Hardware
+
+| Component | Purpose |
 |---|---|
-| Arduino Uno | Flight controller and system integration |
-| MPU6050 | Accelerometer and gyroscope; gives tilt and angular rate for stabilisation |
-| Brushless DC motors | Propulsion |
-| ESCs | Motor speed control |
-| 3S LiPo battery, power distribution board | Power supply and distribution |
-| FlySky i6X + receiver | Pilot control (throttle, yaw, pitch, roll) |
-| OpenMV Cam H7 Plus (480 MHz ARM) | On-board computer vision |
+| Arduino Uno | Control-system integration |
+| MPU6050 | Accelerometer and gyroscope measurements |
+| Brushless motors | Propulsion |
+| Electronic speed controllers | Motor-speed control |
+| LiPo battery and power distribution board | Electrical power |
+| FlySky transmitter and receiver | Pilot input |
+| OpenMV Cam H7 Plus | On-board image processing |
 
-![OpenMV H7 Plus](images/openmv-h7-plus.png) ![Arduino Uno](images/arduino-uno.png)
+![OpenMV H7 Plus](images/openmv-h7-plus.png)
+![Arduino Uno](images/arduino-uno.png)
 
-## Object detection
-Programmed in Python in the OpenMV IDE. The camera captures HQVGA greyscale frames and runs a Haar-cascade `frontalface` detector. When a face is found, a pin goes high to power an LED beacon and alarm. See [`software/openmv/face_detect.py`](software/openmv/face_detect.py).
+## Face-detection function
 
-## Flight testing and redesign
-| Test | What happened | Fix |
+The camera implementation used a Haar-cascade frontal-face detector. When a face was detected, the program set an output pin to activate an LED and alarm.
+
+The included [face_detect.py](software/openmv/face_detect.py) is a reconstructed example based on the project documentation; it should not be treated as the original source code from the project.
+
+**Scope note:** this prototype demonstrated frontal-face detection. It was not a general-purpose object-detection system.
+
+## Flight testing and iteration
+
+The project documentation records three rounds of testing:
+
+| Test | Reported observation | Design response |
 |---|---|---|
-| **1: Stability** | Steady in flight and landing; the IMU and its code worked | None needed |
-| **2: Altitude** | Reached about 70 m, lost orientation (front and back looked the same), crashed. Damaged an arm, propellers and an ESC | New arm; colour-coded front and rear arms |
-| **3: Piloting** | Stable, responsive flight, then crashed on landing from limited piloting skill. Damaged hardware and bodywork | Redesigned a more crash-tolerant frame, the "Blue Beetle", with clear direction cues |
+| Initial stability test | The prototype achieved a stable flight and landing during the test. | Continued testing. |
+| Altitude test | The drone reportedly reached approximately 70 metres, lost orientation and crashed. | Repaired damaged parts and added colour cues to help distinguish the front and rear. |
+| Further flight test | The drone was reported to be stable and responsive, but crashed during landing. | The team developed a revised frame design referred to as “Blue Beetle”. |
 
-| Test 1 | Test 2 damage | Redesigned frame |
+| Initial test | Damage after a test | Revised printed frame |
 |---|---|---|
-| ![Test 1](images/flight-test-1-stability.png) | ![Test 2](images/flight-test-2-crash-damage.png) | ![Blue Beetle](images/blue-beetle-printed-frame.png) |
+| ![Flight test](images/flight-test-1-stability.png) | ![Crash damage](images/flight-test-2-crash-damage.png) | ![Blue Beetle printed frame](images/blue-beetle-printed-frame.png) |
 
-More detail in [`results/flight-test-results.md`](results/flight-test-results.md).
+These are observations recorded in the project report, not independently measured performance results. Further detail is available in [flight-test results](results/flight-test-results.md).
 
-## Challenges
-- Limited local availability of electronic components
-- Cost pressure and exchange-rate changes
-- Keeping track of orientation in flight
-- Crash damage to structure and electronics
-- Tight timeline
-- Programming and integrating the vision system
+## Challenges and lessons
 
-## Skills demonstrated
-- **Mechanical:** CAD, structural design, stress/strain analysis, material selection, 3D printing, assembly
-- **Electronics:** component integration, motor control, power distribution, sensor integration, wiring
-- **Programming:** Arduino, Python on OpenMV, image processing, Haar-cascade detection
-- **Testing:** prototyping, flight testing, failure analysis, design iteration
+- Maintaining clear orientation cues for the pilot.
+- Managing damage to the frame and components during testing.
+- Sourcing components and working within the project budget.
+- Integrating the camera function with the wider prototype.
+- Using test observations to guide design changes.
 
-## Lessons learned
-- Orientation cues matter as much as stability for piloting.
-- Design for crashes, not just for flight.
-- Give each test one clear goal so failures are easy to diagnose.
+The project reinforced the importance of designing for maintainability and impact resistance, documenting test conditions, and separating mechanical, electrical and software faults during troubleshooting.
 
-## Future work
-- Detect more than faces and refine the algorithm for uses such as agriculture and public safety
-- Try stronger, more impact-resistant materials than PLA
-- Improve flight stabilisation, navigation and autonomy
-- Improve camera performance and data transmission
-- Better protection for electronics in the frame
+## Design files and project evidence
 
-## Notes on accuracy
-This documents an academic prototype. The original objectives mentioned carbon-fibre filament, but the frame that was built used PLA. The motion sensor is the MPU6050 (the report also writes "MPU6040" in places). The detection implemented is frontal-face detection only. The cost table follows the report's bill of materials and may differ from the original receipts.
+The repository currently contains selected analysis images and project photographs. Original CAD models, manufacturing drawings and the complete original source code are not included at present. See the [design folder](design/README.md) for the files that can be added when available.
 
-## Tools
-SolidWorks · AutoCAD · 3D printing (PLA) · Arduino · OpenMV IDE · MicroPython
+## Accuracy and limitations
 
-## Acknowledgement
-Supervised by Dr. E. G. Sadjere, Department of Mechanical Engineering, University of Benin.
+- The project was completed by a team of four; individual contributions should be described separately and only where confirmed.
+- The original project objectives mention carbon-fibre filament, but the documented prototype frame was printed in PLA.
+- The motion sensor is identified as an MPU6050 in the component descriptions; the report contains an inconsistent “MPU6040” reference.
+- The vision feature described here is frontal-face detection, not general object detection.
+- The cost breakdown is transcribed from the report and contains inconsistencies; it has not been verified against receipts.
+- The reported flight observations are presented as documented project outcomes, not independently validated measurements.
+
+## Tools and technologies
+
+SolidWorks · AutoCAD · PLA 3D printing · Arduino Uno · OpenMV IDE · Python
