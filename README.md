@@ -1,20 +1,29 @@
 # Mechanical Engineering Portfolio
 
-Practical mechanical engineering projects: CAD design, 3D printing, engineering analysis, hands-on repair and technical problem-solving.
+A collection of academic and practical work in mechanical engineering, including CAD design, prototyping, engineering analysis, equipment fault diagnosis and technical problem-solving.
 
-**Otubu Able** · Mechanical Engineering graduate, University of Benin · Walsall, UK
-[LinkedIn](https://www.linkedin.com/in/mrable) · otubuable02@gmail.com
+**Otubu Osayande Able**  
+Mechanical Engineering graduate · University of Benin  
+[LinkedIn](https://www.linkedin.com/in/mrable)
 
-## Projects
+## Featured project
 
-| Project | Summary | Tools |
-|---|---|---|
-| [Object Detection Drone](object-detection-drone/) | 3D-printed quadcopter with an Arduino flight controller and an OpenMV camera that detects faces. Covers CAD, stress analysis, printing, assembly, three flight tests and a redesign after crashes. | SolidWorks, AutoCAD, 3D printing (PLA), Arduino, OpenMV (Python) |
+### [Object Detection Drone](object-detection-drone/)
+A final-year team project involving the design and development of a 3D-printed quadcopter prototype. The work covered CAD modelling, structural analysis, PLA 3D printing, electronics integration, basic camera-based face detection, flight testing and design iteration.
 
-More projects, including CAD designs, MATLAB and Simulink simulations and automation work, will be added here.
+**Tools:** SolidWorks, AutoCAD, Arduino, OpenMV IDE, Python and 3D printing.
 
-## Skills
-- **CAD and design:** SolidWorks, AutoCAD, FreeCAD, 2D drafting, 3D modelling, assemblies, tolerancing
-- **Analysis:** stress and displacement studies, design validation
-- **Hands-on:** solar street light installation and repair, inverter repair, soldering, engine fitting and overhauling, brake and suspension repair, fault diagnosis
-- **Prototyping:** 3D printing and assembly
+## Engineering background
+
+- **CAD and design:** SolidWorks and AutoCAD; 3D modelling and engineering design.
+- **Engineering analysis:** Structural stress and displacement studies as part of academic design work.
+- **Prototyping:** PLA 3D printing, component assembly and prototype testing.
+- **Practical engineering:** Solar street-light systems, inverter fault diagnosis, circuit-board soldering and technical troubleshooting.
+
+## Professional development
+
+Currently working through MATLAB Onramp and Simulink Onramp. Related projects and certificates will be added after completion.
+
+## About this portfolio
+
+This portfolio is being developed to document project work, explain engineering decisions and provide evidence of practical skills. Team-project contributions are identified as such; individual responsibilities are only stated where they can be verified.
