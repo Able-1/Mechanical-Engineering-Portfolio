@@ -1,3 +1,4 @@
+[object-detection-drone-project-report-redacted.pdf](https://github.com/user-attachments/files/34553824/object-detection-drone-project-report-redacted.pdf)
 # Final-year project report
 
 **Project:** The Design and Development of an Object Detection Drone  
