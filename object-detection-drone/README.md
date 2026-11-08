@@ -1,14 +1,12 @@
-# Object Detection Drone: 3D-Printed Quadcopter
+# Design and Development of an Object Detection Drone
 
-**Final-year B.Eng group project · Mechanical Engineering · University of Benin · 2023**
+**Final-year B.Eng project · Mechanical Engineering · University of Benin · 2023**
 
-This project involved developing a 3D-printed quadcopter prototype with an Arduino-based control system, an MPU6050 motion sensor and an OpenMV H7 Plus camera. The camera implementation performed frontal-face detection and activated an LED/alarm output when a face was detected.
+For my final-year project, I worked with three other students on the design and development of a quadcopter drone. We designed the frame, carried out structural analysis, 3D-printed the prototype, assembled the main electronic components and carried out flight tests.
 
-The project brought together mechanical design, structural analysis, 3D printing, electronics integration, computer vision and iterative testing.
+We also integrated an OpenMV H7 Plus camera for frontal-face detection. When the camera detected a face, the program triggered an LED and an alarm.
 
 ![Blue Beetle CAD render](images/blue-beetle-cad-render.png)
-
-> **Team project:** completed by a group of four students. This page describes the overall project. It does not assign unverified individual contributions.
 
 ## Project overview
 
@@ -22,28 +20,30 @@ The project brought together mechanical design, structural analysis, 3D printing
 | Vision task | Frontal-face detection using a Haar cascade |
 | Propulsion | Four brushless motors with ESCs |
 | Radio control | FlySky i6X transmitter and receiver |
-| Project cost | ₦430,900 as stated in the report; see [bill of materials](hardware/bill-of-materials.md) |
+| Project cost | ₦430,900 as stated in the report; see the [bill of materials](hardware/bill-of-materials.md) |
 
-## Project objectives
+## What we set out to do
 
-1. Design a lightweight quadcopter frame.
-2. Model and assess the frame before manufacture.
+1. Design a lightweight frame for the quadcopter.
+2. Model the frame and study its structural behaviour.
 3. Manufacture the frame using 3D printing.
-4. Integrate the propulsion, control and power components.
-5. Add a camera-based face-detection function.
-6. Conduct flight tests and improve the design based on observations.
+4. Assemble the propulsion, control and power components.
+5. Integrate a camera-based face-detection feature.
+6. Test the drone and make changes based on the results.
 
-## Design and analysis
+## CAD design and structural analysis
 
-The team modelled the frame components in CAD and carried out structural stress, strain and displacement studies. The analysis was used to assess the proposed frame before 3D printing.
+We modelled the drone frame in CAD and carried out stress, strain and displacement analysis before manufacturing the prototype. The analysis images below are taken from the project work.
 
 | Displacement study | Stress study |
 |---|---|
 | ![Displacement analysis](images/displacement-analysis-2.png) | ![Stress analysis](images/stress-analysis.png) |
 
-The prototype frame was printed in PLA. PLA made it practical to produce and revise parts, although its impact resistance and heat tolerance are limitations to consider in a flying prototype.
+The frame was printed in PLA. This allowed us to produce the parts and make changes during development.
 
-## Hardware
+## Hardware and assembly
+
+The main components used in the prototype included:
 
 | Component | Purpose |
 |---|---|
@@ -53,61 +53,55 @@ The prototype frame was printed in PLA. PLA made it practical to produce and rev
 | Electronic speed controllers | Motor-speed control |
 | LiPo battery and power distribution board | Electrical power |
 | FlySky transmitter and receiver | Pilot input |
-| OpenMV Cam H7 Plus | On-board image processing |
+| OpenMV Cam H7 Plus | Image processing |
 
 ![OpenMV H7 Plus](images/openmv-h7-plus.png)
 ![Arduino Uno](images/arduino-uno.png)
 
-## Face-detection function
+## Camera and face detection
 
-The camera implementation used a Haar-cascade frontal-face detector. When a face was detected, the program set an output pin to activate an LED and alarm.
+We used the OpenMV camera to run a Haar-cascade frontal-face detector. When a face was detected, the program set an output pin to activate an LED and an alarm.
 
-The included [face_detect.py](software/openmv/face_detect.py) is a reconstructed example based on the project documentation; it should not be treated as the original source code from the project.
+The [face_detect.py](software/openmv/face_detect.py) file in this repository is a reconstructed example based on the project documentation. It is not the original source code used by the team.
 
-**Scope note:** this prototype demonstrated frontal-face detection. It was not a general-purpose object-detection system.
+The camera feature was designed for frontal-face detection; it was not a general-purpose object detector.
 
-## Flight testing and iteration
+## Flight testing and improvements
 
-The project documentation records three rounds of testing:
+We carried out several flight tests and made changes after encountering problems.
 
-| Test | Reported observation | Design response |
+| Test | What happened | What we changed |
 |---|---|---|
-| Initial stability test | The prototype achieved a stable flight and landing during the test. | Continued testing. |
-| Altitude test | The drone reportedly reached approximately 70 metres, lost orientation and crashed. | Repaired damaged parts and added colour cues to help distinguish the front and rear. |
-| Further flight test | The drone was reported to be stable and responsive, but crashed during landing. | The team developed a revised frame design referred to as “Blue Beetle”. |
+| Initial stability test | The drone completed a stable flight and landing during the test. | We continued with further testing. |
+| Altitude test | The report records that the drone reached approximately 70 metres before losing orientation and crashing. | We repaired the damaged parts and used different colours on the front and rear arms to make the drone's direction easier to identify. |
+| Further flight test | The drone was reported to be stable and responsive, but crashed during landing. | We worked on a revised frame design known as “Blue Beetle”. |
 
 | Initial test | Damage after a test | Revised printed frame |
 |---|---|---|
 | ![Flight test](images/flight-test-1-stability.png) | ![Crash damage](images/flight-test-2-crash-damage.png) | ![Blue Beetle printed frame](images/blue-beetle-printed-frame.png) |
 
-These are observations recorded in the project report, not independently measured performance results. Further detail is available in [flight-test results](results/flight-test-results.md).
+More detail is available in the [flight-test results](results/flight-test-results.md).
 
-## Challenges and lessons
+## Challenges and what I learned
 
-- Maintaining clear orientation cues for the pilot.
-- Managing damage to the frame and components during testing.
-- Sourcing components and working within the project budget.
-- Integrating the camera function with the wider prototype.
-- Using test observations to guide design changes.
+The project gave me practical experience of taking a design from CAD modelling to a physical prototype. We had to deal with frame damage, flight-orientation problems, component integration and the limitations of the first design.
 
-The project reinforced the importance of designing for maintainability and impact resistance, documenting test conditions, and separating mechanical, electrical and software faults during troubleshooting.
+One important lesson was that a design that looks suitable in CAD still needs to be tested under real conditions. The flight tests helped us identify areas that needed improvement, particularly the visibility of the drone's orientation and the protection of its components.
 
-## Full academic report
+## Project report and files
 
-A privacy-reviewed copy of the 2023 project report has been prepared. The student numbers and the other students’ names have been removed from the public-sharing copy; the author’s name and university/project details remain. The PDF is not yet stored in this repository. See [report documentation](report/README.md) for the report scope and access note.
+The [full project report](report/README.md) contains the academic documentation, design work, analysis and test observations.
 
-## Design files and project evidence
+The repository also contains selected project images and analysis results. The original editable CAD models and manufacturing drawings are not currently included. The [design folder](design/README.md) explains which files belong with this project.
 
-The repository currently contains selected analysis images and project photographs. Original CAD models, manufacturing drawings and the complete original source code are not included at present. See the [design folder](design/README.md) for the files that can be added when available.
+## Notes
 
-## Accuracy and limitations
-
-- The project was completed by a team of four; individual contributions should be described separately and only where confirmed.
-- The original project objectives mention carbon-fibre filament, but the documented prototype frame was printed in PLA.
-- The motion sensor is identified as an MPU6050 in the component descriptions; the report contains an inconsistent “MPU6040” reference.
-- The vision feature described here is frontal-face detection, not general object detection.
-- The cost breakdown is transcribed from the report and contains inconsistencies; it has not been verified against receipts.
-- The reported flight observations are presented as documented project outcomes, not independently validated measurements.
+- This was a group project completed by four students.
+- The report's objectives mention carbon-fibre filament, while the prototype described in the report was printed in PLA.
+- The component descriptions identify the motion sensor as an MPU6050. One section of the report refers to it as “MPU6040”.
+- The camera feature was frontal-face detection, rather than general object detection.
+- The ₦430,900 project cost is the figure stated in the report. Some entries in the cost breakdown do not match their quantities or unit prices.
+- Flight-test observations on this page are taken from the project report.
 
 ## Tools and technologies
 
