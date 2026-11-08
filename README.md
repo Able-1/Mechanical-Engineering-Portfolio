@@ -24,7 +24,7 @@ For my final-year project, I worked with a team of four to design and develop a 
 
 ## Solar Engineering Experience
 
-I also completed a Solar Technician internship at JRB Solar Investment Limited, where I worked on solar street-light fault diagnosis and repair, inverter system installation, and remote monitoring of installed solar systems.
+I worked as a Mechanical Engineer at JRB Solar Investment Limited from May 2025 to October 2026. My work included diagnosing and repairing faulty solar street lights, installing inverter systems, and remotely monitoring installed solar systems.
 
 [View my solar engineering experience](solar-engineering-experience/README.md).
 
