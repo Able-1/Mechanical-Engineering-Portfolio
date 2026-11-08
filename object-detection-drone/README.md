@@ -92,6 +92,10 @@ These are observations recorded in the project report, not independently measure
 
 The project reinforced the importance of designing for maintainability and impact resistance, documenting test conditions, and separating mechanical, electrical and software faults during troubleshooting.
 
+## Full academic report
+
+A privacy-reviewed copy of the 2023 project report has been prepared. The student numbers and the other students’ names have been removed from the public-sharing copy; the author’s name and university/project details remain. The PDF is not yet stored in this repository. See [report documentation](report/README.md) for the report scope and access note.
+
 ## Design files and project evidence
 
 The repository currently contains selected analysis images and project photographs. Original CAD models, manufacturing drawings and the complete original source code are not included at present. See the [design folder](design/README.md) for the files that can be added when available.
