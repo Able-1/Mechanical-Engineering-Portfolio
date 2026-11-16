@@ -2,7 +2,7 @@
 
 I'm a Mechanical Engineering graduate from the University of Benin with an interest in CAD design, product development, engineering analysis and practical problem-solving.
 
-This portfolio brings together some of the projects and technical work I've been involved in, starting with my final-year drone project. I'll continue adding new work as I develop my skills in engineering design and simulation.
+This portfolio brings together my engineering projects, technical experience and professional development, starting with my final-year drone project. I'll continue adding practical work as I build my skills in engineering design, modelling and simulation.
 
 **Otubu Osayande Able**  
 Mechanical Engineering graduate · University of Benin  
@@ -28,10 +28,11 @@ I worked as a Mechanical Engineer at JRB Solar Investment Limited from May 2025 
 
 [View my solar engineering experience](solar-engineering-experience/README.md).
 
-## Current learning
+## Certifications and professional development
 
-I'm currently completing MATLAB Onramp and Simulink Onramp. I'll add the certificates and related projects to this portfolio once I've finished them.
+- **MATLAB Onramp — Completed (November 2026).** Training in MATLAB fundamentals and working with the MATLAB environment.
+- **Simulink Onramp — In progress.** Developing skills in modelling and simulating dynamic systems.
 
 ## More projects
 
-I'll use this portfolio to share project work, design files, analysis and lessons from practical engineering tasks as I build up my experience.
+I'll use this portfolio to share project work, design files, analysis and lessons from practical engineering tasks as I continue developing as a mechanical engineer.
